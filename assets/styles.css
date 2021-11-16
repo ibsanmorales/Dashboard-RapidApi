@@ -1,0 +1,22 @@
+h2{
+    color: rgb(37, 72, 150);
+}
+
+.navbarStyle {
+    color: black;
+}
+.navbarStyle:hover{
+ color: azure;
+}
+
+.footerDash{
+    height: 200px;
+}
+
+
+.cardall{
+    color:black;
+    background-color: aliceblue;
+    padding: 5px;
+    min-width: 200px;
+}
