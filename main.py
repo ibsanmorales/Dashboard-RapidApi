@@ -1,5 +1,6 @@
 from datetime import date
 from os import name
+import flask
 from wordcloud import WordCloud
 import en_core_web_sm
 from PIL import Image
@@ -17,9 +18,9 @@ import pandas as pd
 import Services as sv
 from plotly import graph_objects as go
 
+server = flask.Flask(__name__)
+app = dash.Dash(__name__,server=server,external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
-server = app.server
 app.config.suppress_callback_exceptions=True
 api = sv.Service()
 # assume you have a "long-form" data frame
