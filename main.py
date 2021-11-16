@@ -18,7 +18,7 @@ import Services as sv
 from plotly import graph_objects as go
 
 
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP,dbc.icons.FONT_AWESOME,dbc.icons.BOOTSTRAP])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 app.config.suppress_callback_exceptions=True
 api = sv.Service()
