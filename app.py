@@ -18,10 +18,10 @@ import Services as sv
 from plotly import graph_objects as go
 
 
-app = dash.Dash(name=__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
-app.config.suppress_callback_exceptions=True
+#app.config.suppress_callback_exceptions=True
 api = sv.Service()
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
