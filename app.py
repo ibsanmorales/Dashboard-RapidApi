@@ -1,5 +1,4 @@
 from datetime import date
-from os import name
 from wordcloud import WordCloud
 import en_core_web_sm
 from PIL import Image
@@ -198,7 +197,6 @@ def update_output(n_clicks, value,start_date,end_date):
                 time.sleep(3)
                 #GET PRICES
                 priceHistory = api.getProductPriceHistory(value,start_date,end_date)
-                print(priceHistory)
                 if "error" in priceHistory:
                     return html.P('Algo salio mal con la peticion',className='text-danger')
                 if 'prices' in priceHistory['data']:
