@@ -55,7 +55,7 @@ contentVentas = dbc.Container([
         )
     ),
     dbc.Row([
-        dbc.Col(dbc.Input(id='inputProductVentas',type='text')
+        dbc.Col(dbc.Input(id='inputProductVentas',type='text',placeholder="Id de Articulo")
             ,className="col-md-4 col-12 p-3 text-center"),
         dbc.Col(
             dcc.DatePickerRange(
@@ -91,7 +91,7 @@ contentTop = dbc.Container([
         )
     ),
     dbc.Row([
-        dbc.Col(dbc.Input(id='inputProductTop',type='text')
+        dbc.Col(dbc.Input(id='inputProductTop',type='text',  placeholder="Descripcion o Nombre de Articulo")
             ,className="col-md-4 col-12 p-3 text-center"),
         dcc.Dropdown(id="my-dynamic-dropdown",options=options),
         dbc.Col(dbc.Button('ACEPTAR',id='btnTop')
@@ -110,7 +110,7 @@ contentComentarios = dbc.Container([
         )
     ),
     dbc.Row([
-        dbc.Col(dbc.Input(id='inputProductComentario',type='text')
+        dbc.Col(dbc.Input(id='inputProductComentario',type='text',placeholder="Id de Articulo")
             ,className="col-md-4 col-12 p-3 text-center"),
         dbc.Col(dbc.Button('ACEPTAR',id='btnComentario')
             ,className="col-md-2 col-12 p-3 text-center")
