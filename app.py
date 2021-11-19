@@ -55,8 +55,8 @@ contentVentas = dbc.Container([
         )
     ),
     dbc.Row([
-        dbc.Col(dbc.Input(id='inputProductVentas',type='text',placeholder="Id de Articulo")
-            ,className="col-md-4 col-12 p-3 text-center"),
+        dbc.Col(dbc.Input(id='inputProductVentas',type='text',placeholder="Id de Articulo (Eje. 4001017422834)")
+            ,className="col-md-5 col-12 p-3 text-center"),
         dbc.Col(
             dcc.DatePickerRange(
                 id='date-range',
@@ -69,7 +69,7 @@ contentVentas = dbc.Container([
                 )
             ,className="col-md-6 col-12 p-3 text-center"),
         dbc.Col(dbc.Button('ACEPTAR',id='btnVentas')
-            ,className="col-md-2 col-12 p-3 text-center")
+            ,className="col-md-1 col-12 p-3 text-center")
      ] ,style={'maxWidth':'800px'}),
     dbc.Spinner( html.Div(id='productVentas', children='Ingrese los datos para mostrar la grafica'),spinner_style={"width": "3rem", "height": "3rem"}),
 ],
@@ -92,8 +92,8 @@ contentTop = dbc.Container([
     ),
     dbc.Row([
         dbc.Col(dbc.Input(id='inputProductTop',type='text',  placeholder="Descripcion o Nombre de Articulo")
-            ,className="col-md-4 col-12 p-3 text-center"),
-        dcc.Dropdown(id="my-dynamic-dropdown",options=options),
+            ,className="col-md-6 col-12 p-3 text-center"),
+        dbc.Col(dcc.Dropdown(id="my-dynamic-dropdown",options=options),className="col-md-4 col-12 p-3 text-center"),
         dbc.Col(dbc.Button('ACEPTAR',id='btnTop')
             ,className="col-md-2 col-12 p-3 text-center")
      ] ,style={'maxWidth':'800px'}),
@@ -110,8 +110,8 @@ contentComentarios = dbc.Container([
         )
     ),
     dbc.Row([
-        dbc.Col(dbc.Input(id='inputProductComentario',type='text',placeholder="Id de Articulo")
-            ,className="col-md-4 col-12 p-3 text-center"),
+        dbc.Col(dbc.Input(id='inputProductComentario',type='text',placeholder="Id de Articulo (Eje. 4001017422834)")
+            ,className="col-md-5 col-12 p-3 text-center"),
         dbc.Col(dbc.Button('ACEPTAR',id='btnComentario')
             ,className="col-md-2 col-12 p-3 text-center")
      ] ,style={'maxWidth':'800px'}),
